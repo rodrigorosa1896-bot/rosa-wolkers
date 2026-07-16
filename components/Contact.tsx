@@ -151,11 +151,7 @@ export default function Contact() {
                 </h3>
 
                 <p className="text-gray-200 mt-6 leading-8 text-base md:text-lg">
-                  Especialistas em instalações elétricas,
-                  abertura de valas,
-                  mini giratória,
-                  plataforma elevatória
-                  e manutenção de infraestruturas.
+                  Preencha o formulário para receber o seu orçamento.
                 </p>
 
               </div>

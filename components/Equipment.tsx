@@ -37,7 +37,7 @@ export default function Equipment() {
             </h3>
 
             <p className="mt-4 text-slate-600 leading-7">
-              Aluguer de mini giratória com operador para todo o tipo
+              Cedência de mini giratória com operador para todo o tipo
               de escavações, abertura de valas e movimentação de terras.
             </p>
 

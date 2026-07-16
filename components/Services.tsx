@@ -7,22 +7,22 @@ const services = [
   {
     image: "/images/services/hero.jpg",
     title: "Reposição de Pavimentos",
-    text: "Reposição de pavê, calçada e pavimentos após execução de infraestruturas.",
+    text: "Reposição de pavimentos.",
   },
   {
     image: "/images/services/valas.jpg",
     title: "Abertura de Valas",
-    text: "Escavações para instalação de infraestruturas elétricas e preparação de redes.",
+    text: "Escavações/Aberturas de vala. ",
   },
   {
     image: "/images/services/tubagem.jpg",
     title: "Infraestruturas Elétricas",
-    text: "Execução de infraestruturas elétricas exteriores, incluindo assentamento de tubagem e preparação para passagem de cabos.",
+    text: "Execução de infraestruturas elétricas, incluindo assentamento de tubagem e preparação para passagem de cabos.",
   },
   {
     image: "/images/services/minigiratoria.jpg",
     title: "Mini Giratória",
-    text: "Aluguer de mini giratória com manobrador para todo o tipo de trabalhos.",
+    text: "Cedência de mini giratória com manobrador para todo o tipo de trabalhos.",
   },
   {
     image: "/images/services/plataforma.jpg",
@@ -31,8 +31,8 @@ const services = [
   },
   {
     image: "/images/services/infraestruturas.jpg",
-    title: "Manutenção",
-    text: "Manutenção de infraestruturas elétricas exteriores e iluminação pública.",
+    title: "Manutenção/Iluminação Publica",
+    text: "Manutenção/Remodelação de infraestruturas elétricas/iluminação exterior particular.",
   },
 ];
 
@@ -54,11 +54,7 @@ export default function Services() {
             Áreas de Especialização
           </h2>
 
-          <p className="mt-6 text-lg text-gray-600 leading-8">
-            Executamos infraestruturas elétricas exteriores para redes de
-            distribuição, iluminação pública e obras de urbanização,
-            garantindo qualidade, segurança e profissionalismo.
-          </p>
+          
 
         </div>
 

@@ -28,9 +28,7 @@ export default function Footer() {
             />
 
             <p className="text-gray-400 mt-6 leading-7">
-              Especialistas em infraestruturas elétricas exteriores,
-              abertura de valas,iluminação pública, manutenção de Instalações, 
-              cedência de equipamentos com manobrador.
+              Profissionalismo, Confiança e Eficiência
             </p>
 
           </div>
@@ -60,7 +58,7 @@ export default function Footer() {
                   href="tel:963880517"
                   className="hover:text-red-500 transition"
                 >
-                  963 880 517
+                  963 880 517/ 912828740
                 </a>
               </div>
 
@@ -99,9 +97,7 @@ export default function Footer() {
 
               <p>08:00 - 18:00</p>
 
-              <p>Sábado por marcação</p>
-
-              <p>Domingo encerrado</p>
+             
 
             </div>
 
