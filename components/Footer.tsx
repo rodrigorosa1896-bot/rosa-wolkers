@@ -58,7 +58,7 @@ export default function Footer() {
                   href="tel:963880517"
                   className="hover:text-red-500 transition"
                 >
-                  963 880 517/ 912828740
+                  963 880 517
                 </a>
               </div>
 
