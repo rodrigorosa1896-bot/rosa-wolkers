@@ -37,7 +37,6 @@ export const metadata: Metadata = {
   ],
 
   creator: "ROSA&WOLKERS",
-
   publisher: "ROSA&WOLKERS",
 
   alternates: {
@@ -68,18 +67,12 @@ export const metadata: Metadata = {
 
   openGraph: {
     title: "ROSA&WOLKERS",
-
     description:
       "Especialistas em instalações elétricas, infraestruturas, abertura de valas, mini giratória e plataforma elevatória.",
-
     url: "https://rosawolkers.com",
-
     siteName: "ROSA&WOLKERS",
-
     locale: "pt_PT",
-
     type: "website",
-
     images: [
       {
         url: "/og-image.jpg",
@@ -92,12 +85,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-
     title: "ROSA&WOLKERS",
-
     description:
       "Instalações elétricas e infraestruturas em Sintra.",
-
     images: ["/og-image.jpg"],
   },
 };
@@ -112,11 +102,8 @@ export default function RootLayout({
     "@type": "Electrician",
 
     name: "ROSA&WOLKERS",
-
     url: "https://rosawolkers.com",
-
     logo: "https://rosawolkers.com/logo.png",
-
     image: "https://rosawolkers.com/og-image.jpg",
 
     telephone: [
@@ -160,18 +147,13 @@ export default function RootLayout({
 
   return (
     <html lang="pt-PT">
-
       {/* Google Analytics 4 */}
-
       <Script
         src="https://www.googletagmanager.com/gtag/js?id=G-YQEGTQ9HF6"
         strategy="afterInteractive"
       />
 
-      <Script
-        id="google-analytics"
-        strategy="afterInteractive"
-      >
+      <Script id="google-analytics" strategy="afterInteractive">
         {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
@@ -181,8 +163,22 @@ export default function RootLayout({
         `}
       </Script>
 
-      <body>
+      {/* Microsoft Clarity */}
+      <Script id="microsoft-clarity" strategy="afterInteractive">
+        {`
+          (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);
+            t.async=1;
+            t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];
+            y.parentNode.insertBefore(t,y);
+          })(window, document, "clarity", "script", "xneyscwkw7");
+        `}
+      </Script>
 
+      <body>
+        {/* Schema.org */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -191,9 +187,7 @@ export default function RootLayout({
         />
 
         {children}
-
       </body>
-
     </html>
   );
 }
