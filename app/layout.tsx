@@ -116,11 +116,12 @@ export const metadata: Metadata = {
     email: "geral.rosawolkers@gmail.com",
 
     address: {
-      "@type": "PostalAddress",
-      addressLocality: "Terrugem",
-      addressRegion: "Sintra",
-      addressCountry: "PT",
-    },
+  "@type": "PostalAddress",
+  addressLocality: "Terrugem",
+  addressRegion: "Sintra",
+  postalCode: "2705-863",
+  addressCountry: "PT",
+},
 
     areaServed: [
       "Sintra",
