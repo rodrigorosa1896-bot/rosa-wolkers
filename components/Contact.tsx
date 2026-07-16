@@ -171,7 +171,7 @@ export default function Contact() {
                     </p>
 
                     <p className="text-white text-xl md:text-2xl font-bold">
-                      963 880 517
+                      963 880 517 / 912828740
                     </p>
 
                   </div>
