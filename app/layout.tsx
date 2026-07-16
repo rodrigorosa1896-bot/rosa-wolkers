@@ -1,3 +1,4 @@
+import Script from "next/script";
 import type { Metadata } from "next";
 import "./globals.css";
 
@@ -42,9 +43,11 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://rosawolkers.com",
   },
-verification: {
-  google: "dKaxc41H54HICjyRRd197fXr8fyyY_J6gMpjho3opzs",
-},
+
+  verification: {
+    google: "dKaxc41H54HICjyRRd197fXr8fyyY_J6gMpjho3opzs",
+  },
+
   robots: {
     index: true,
     follow: true,
@@ -65,6 +68,7 @@ verification: {
 
   openGraph: {
     title: "ROSA&WOLKERS",
+
     description:
       "Especialistas em instalações elétricas, infraestruturas, abertura de valas, mini giratória e plataforma elevatória.",
 
@@ -88,12 +92,17 @@ verification: {
 
   twitter: {
     card: "summary_large_image",
+
     title: "ROSA&WOLKERS",
+
     description:
       "Instalações elétricas e infraestruturas em Sintra.",
+
     images: ["/og-image.jpg"],
   },
-};export default function RootLayout({
+};
+
+export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
@@ -118,12 +127,12 @@ verification: {
     email: "geral@rosawolkers.com",
 
     address: {
-  "@type": "PostalAddress",
-  addressLocality: "Terrugem",
-  addressRegion: "Sintra",
-  postalCode: "2705-863",
-  addressCountry: "PT",
-},
+      "@type": "PostalAddress",
+      addressLocality: "Terrugem",
+      addressRegion: "Sintra",
+      postalCode: "2705-863",
+      addressCountry: "PT",
+    },
 
     areaServed: [
       "Sintra",
@@ -151,7 +160,29 @@ verification: {
 
   return (
     <html lang="pt-PT">
+
+      {/* Google Analytics 4 */}
+
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-YQEGTQ9HF6"
+        strategy="afterInteractive"
+      />
+
+      <Script
+        id="google-analytics"
+        strategy="afterInteractive"
+      >
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-YQEGTQ9HF6');
+        `}
+      </Script>
+
       <body>
+
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -160,7 +191,9 @@ verification: {
         />
 
         {children}
+
       </body>
+
     </html>
   );
 }
