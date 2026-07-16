@@ -31,7 +31,7 @@ const services = [
   },
   {
     image: "/images/services/infraestruturas.jpg",
-    title: "Manutenção/Iluminação Publica",
+    title: "Manutenção",
     text: "Manutenção/Remodelação de infraestruturas elétricas/iluminação exterior particular.",
   },
 ];
