@@ -24,12 +24,11 @@ export default function Hero() {
   return (
     <section
       id="inicio"
-      className="relative h-screen overflow-hidden"
+      className="relative min-h-screen lg:h-screen overflow-hidden"
     >
       {/* Vídeo de Fundo */}
 
       <AnimatePresence mode="sync">
-
         <motion.video
           key={currentVideo}
           autoPlay
@@ -63,56 +62,134 @@ export default function Hero() {
             type="video/mp4"
           />
         </motion.video>
-
       </AnimatePresence>
 
       {/* Overlay */}
 
-      <div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/60 to-black/70" />
+      <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/65 to-black/75" />
 
       {/* Conteúdo */}
 
-      <div className="relative z-20 flex items-center h-full">
+      <div className="relative z-20 flex items-center min-h-screen pt-28 lg:pt-0">
 
         <div className="max-w-7xl mx-auto w-full px-6">
 
-          <div className="max-w-4xl"></div>             <span className="inline-block bg-red-600 text-white px-6 py-2 rounded-full uppercase tracking-[4px] text-sm font-bold mb-8">
+          <div className="max-w-4xl">
+
+            <span
+              className="
+                inline-block
+                bg-red-600
+                text-white
+                px-4 md:px-6
+                py-2
+                rounded-full
+                uppercase
+                tracking-[2px]
+                md:tracking-[4px]
+                text-xs
+                md:text-sm
+                font-bold
+                mb-6
+                md:mb-8
+              "
+            >
               ROSA&WOLKERS
             </span>
 
-            <h1 className="text-5xl md:text-7xl xl:text-8xl font-black text-white leading-tight">
-
+            <h1
+              className="
+                text-4xl
+                sm:text-5xl
+                md:text-6xl
+                xl:text-8xl
+                font-black
+                text-white
+                leading-tight
+              "
+            >
               Construímos soluções.
 
               <br />
 
               <span className="text-red-500">
                 Ligamos o futuro.
-              </span>
+              </span>             </h1>
 
-            </h1>
-
-            <p className="mt-8 text-xl md:text-2xl text-gray-200 leading-9 max-w-3xl">
-
+            <p
+              className="
+                mt-6
+                md:mt-8
+                text-base
+                sm:text-lg
+                md:text-xl
+                text-gray-200
+                leading-7
+                md:leading-9
+                max-w-3xl
+              "
+            >
               Prestação de serviços em obras públicas e particulares,
               instalações elétricas, infraestruturas elétricas,
               abertura de valas, reposição de pavimentos,
               cedência de mini giratória e plataforma elevatória.
-
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-5 mt-12">
-
+            <div
+              className="
+                flex
+                flex-col
+                sm:flex-row
+                gap-4
+                md:gap-5
+                mt-10
+                md:mt-12
+              "
+            >
               <a
                 href="#contactos"
-                className="bg-red-600 hover:bg-red-700 text-white px-10 py-5 rounded-xl font-bold text-lg transition-all duration-300 hover:scale-105 shadow-2xl"
+                className="
+                  bg-red-600
+                  hover:bg-red-700
+                  text-white
+                  px-8
+                  md:px-10
+                  py-4
+                  md:py-5
+                  rounded-xl
+                  font-bold
+                  text-base
+                  md:text-lg
+                  transition-all
+                  duration-300
+                  hover:scale-105
+                  shadow-2xl
+                  text-center
+                "
               >
                 Pedir Orçamento
               </a>
 
               <a
                 href="tel:963880517"
-                className="border-2 border-white hover:bg-white hover:text-slate-900 text-white px-10 py-5 rounded-xl font-bold text-lg transition-all duration-300"
+                className="
+                  border-2
+                  border-white
+                  hover:bg-white
+                  hover:text-slate-900
+                  text-white
+                  px-8
+                  md:px-10
+                  py-4
+                  md:py-5
+                  rounded-xl
+                  font-bold
+                  text-base
+                  md:text-lg
+                  transition-all
+                  duration-300
+                  text-center
+                "
               >
                 Ligar Agora
               </a>
@@ -123,10 +200,10 @@ export default function Hero() {
 
         </div>
 
-           {/* Indicador de Scroll */}
+      </div>      {/* Indicador de Scroll */}
 
       <motion.div
-        className="absolute bottom-10 left-1/2 -translate-x-1/2 z-30"
+        className="hidden md:block absolute bottom-10 left-1/2 -translate-x-1/2 z-30"
         animate={{
           y: [0, 10, 0],
         }}
