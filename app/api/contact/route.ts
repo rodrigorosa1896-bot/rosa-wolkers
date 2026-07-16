@@ -15,7 +15,7 @@ export async function POST(request: Request) {
 
     const { data, error } = await resend.emails.send({
       from: "ROSA&WOLKERS <noreply@rosawolkers.com>",
-      to: ["geral.rosawolkers@gmail.com"],
+      to: ["geral@rosawolkers.com"],
       subject: `Novo pedido de orçamento - ${nome}`,
       html: `
         <h2>Novo pedido de orçamento</h2>

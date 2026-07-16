@@ -115,7 +115,7 @@ verification: {
       "+351912828740",
     ],
 
-    email: "geral.rosawolkers@gmail.com",
+    email: "geral@rosawolkers.com",
 
     address: {
   "@type": "PostalAddress",

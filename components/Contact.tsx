@@ -195,7 +195,7 @@ export default function Contact() {
                     </p>
 
                     <p className="text-white break-all">
-                      geral.rosawolkers@gmail.com
+                      geral@rosawolkers.com
                     </p>
 
                   </div>
