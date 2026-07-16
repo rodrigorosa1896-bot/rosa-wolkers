@@ -24,7 +24,7 @@ export default function Hero() {
   return (
     <section
       id="inicio"
-      className="relative min-h-screen lg:h-screen overflow-hidden"
+      className="relative min-h-screen overflow-hidden"
     >
       {/* Vídeo de Fundo */}
 
@@ -70,31 +70,58 @@ export default function Hero() {
 
       {/* Conteúdo */}
 
-      <div className="relative z-20 flex items-center min-h-screen pt-28 lg:pt-0">
-
+      <div
+        className="
+          relative
+          z-20
+          flex
+          items-center
+          min-h-screen
+          pt-28
+          pb-20
+        "
+      >
         <div className="max-w-7xl mx-auto w-full px-6">
 
-          <div className="max-w-4xl pt-20 lg:pt-10">
+          <div className="max-w-4xl">
+
+            <span
+              className="
+                inline-block
+                bg-red-600
+                text-white
+                px-4 md:px-6
+                py-2
+                rounded-full
+                uppercase
+                tracking-[2px]
+                md:tracking-[4px]
+                text-xs
+                md:text-sm
+                font-bold
+                mb-6
+                md:mb-8
+              "
+            >
+              ROSA&WOLKERS
+            </span>
 
             <h1
               className="
                 text-4xl
                 sm:text-5xl
                 md:text-6xl
-                xl:text-8xl
+                xl:text-7xl
                 font-black
                 text-white
                 leading-tight
               "
             >
               Construímos soluções.
-
               <br />
-
               <span className="text-red-500">
                 Ligamos o futuro.
               </span>
-
             </h1>
 
             <p
