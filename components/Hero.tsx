@@ -74,7 +74,7 @@ export default function Hero() {
 
         <div className="max-w-7xl mx-auto w-full px-6">
 
-          <div className="max-w-4xl">
+          <div className="max-w-4xl pt-20 lg:pt-10">
 
             <h1
               className="
