@@ -76,26 +76,7 @@ export default function Hero() {
 
           <div className="max-w-4xl">
 
-            <span
-              className="
-                inline-block
-                bg-red-600
-                text-white
-                px-4 md:px-6
-                py-2
-                rounded-full
-                uppercase
-                tracking-[2px]
-                md:tracking-[4px]
-                text-xs
-                md:text-sm
-                font-bold
-                mb-6
-                md:mb-8
-              "
-            >
-              ROSA&WOLKERS
-            </span>
+           
 
             <h1
               className="
