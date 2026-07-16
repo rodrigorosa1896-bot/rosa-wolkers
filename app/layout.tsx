@@ -42,7 +42,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://rosawolkers.com",
   },
-
+verification: {
+  google: "dKaxc41H54HICjyRRd197fXr8fyyY_J6gMpjho3",
+},
   robots: {
     index: true,
     follow: true,
