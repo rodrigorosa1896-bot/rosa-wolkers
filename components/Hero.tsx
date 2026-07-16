@@ -88,8 +88,8 @@ export default function Hero() {
             <span
               className="
                 inline-block
-                bg-red-600
-                text-white
+                bg-tranparent-600
+                text-transparent
                 px-4 md:px-6
                 py-2
                 rounded-full
@@ -103,7 +103,7 @@ export default function Hero() {
                 md:mb-8
               "
             >
-              ROSA&WOLKERS
+              
             </span>
 
             <h1
