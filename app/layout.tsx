@@ -178,6 +178,12 @@ export default function RootLayout({
       </Script>
 
       <body>
+        <Script
+  async
+  strategy="afterInteractive"
+  src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3611282117593015"
+  crossOrigin="anonymous"
+/>
         {/* Schema.org */}
         <script
           type="application/ld+json"
